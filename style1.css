@@ -1,0 +1,66 @@
+.container{
+    background-color: rgb(150, 150, 150);
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "section1 section2 ads"
+                         "foot foot foot"
+                         "rrss rrss rrss";
+}
+.container>div{
+    color: white;
+    background-color: rgb(126, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .header{
+    background-color: rgb(236, 199, 75);
+    grid-column: header;
+}
+.container .nav{
+    background-color: rgb(185, 204, 11);    
+    grid-column: nav;
+}
+.container .section1{
+    background-color: rgb(56, 138, 48);
+    grid-column: section1;
+}
+.container .section2{
+    background-color: rgb(56, 138, 48);
+    grid-column: section2;
+}
+.container .ads {
+    background-color: rgb(69, 46, 201);
+    grid-column: ads;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+
+}
+.container .ads .h-ads{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+.container .foot{
+    background-color: rgb(31, 187, 179);
+    grid-column: foot;
+}
+.container .r1 {
+    background-color: rgb(7, 47, 73);
+}
+.container .r2 {
+    background-color: rgb(7, 47, 73);
+}
+.container .r3 {
+    background-color: rgb(7, 47, 73);
+}
